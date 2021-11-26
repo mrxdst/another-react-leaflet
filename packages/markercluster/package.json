@@ -1,0 +1,51 @@
+{
+  "name": "another-react-leaflet-markercluster",
+  "version": "0.1.0",
+  "description": "Markercluster plugin for another-react-leaflet.",
+  "author": "David Turesson",
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrxdst/another-react-leaflet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrxdst/another-react-leaflet/issues"
+  },
+  "homepage": "https://github.com/mrxdst/another-react-leaflet#readme",
+  "keywords": [
+    "react",
+    "leaflet",
+    "react-leaflet",
+    "markercluster"
+  ],
+  "scripts": {
+    "prebuild": "npm run lint",
+    "build": "tsc",
+    "lint": "eslint src --ext ts --ext tsx"
+  },
+  "main": "./build/index.js",
+  "files": [
+    "build"
+  ],
+  "peerDependencies": {
+    "another-react-leaflet": "^0.1.0",
+    "leaflet": "^1.7.0",
+    "leaflet.markercluster": "^1.5.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "~1.7.0",
+    "@types/leaflet.markercluster": "~1.4.6",
+    "@types/node": "~16.11.1",
+    "@types/react": "~17.0.0",
+    "@types/react-dom": "~17.0.0",
+    "@typescript-eslint/eslint-plugin": "~5.4.0",
+    "@typescript-eslint/parser": "~5.4.0",
+    "eslint": "~8.3.0",
+    "eslint-plugin-react": "~7.27.1",
+    "eslint-plugin-react-hooks": "~4.3.0",
+    "typescript": "~4.5.2"
+  }
+}
