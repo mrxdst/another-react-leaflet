@@ -68,3 +68,19 @@ export function MapView() {
 ## Plugins
 
  * [markercluster](https://github.com/mrxdst/another-react-leaflet/tree/master/packages/markercluster)
+
+## Help
+
+### Changing some props doesn't do anything.
+
+The leaflet library doesn't allow changing all options after an instance has been created. Only some options can be changed after creation.
+
+In order to be able to change any option, the instance would be need to be destroyed and recreated, loosing the internal state in the process.
+
+If you would like to opt-in to that behaviour you only need to change the react key to force a remount.
+
+```tsx
+<Tooltip key={JSON.stringify({permanent})} permanent={permanent}>
+  <h1>Hello!</h1>
+</Tooltip>
+```
